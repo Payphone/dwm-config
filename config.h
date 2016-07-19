@@ -2,9 +2,9 @@
 
 /* appearance */
 static const char *fonts[] = {
-        "terminus:pixelsize=11"
+        "Terminus 24"
 };
-static const char dmenufont[]       = "xft:terminus:pixelsize=11";
+static const char dmenufont[]       = "Terminus 24";
 static const char normbordercolor[] = "#073642";
 static const char normbgcolor[]     = "#002B36";
 static const char normfgcolor[]     = "#839496";
@@ -18,16 +18,14 @@ static const Bool topbar            = True;     /* False means bottom bar */
 static const Bool statusmarkup = False;
 
 /* tagging */
-static const char *tags[] = { "WWW", "λ", "MISC", "MUSIC" };
+static const char *tags[] = { "www", "misc", "code", "music" };
 
 static const Rule rules[] = {
        /* class              instance    title       tags mask     isfloating   monitor */
     { "Gimp",             NULL,       NULL,       0,            True,        -1 },
     { "feh",              NULL,       NULL,       0,            True,        -1 },
-    { "Seamonkey",        NULL,       NULL,       1 << 0,       False,        -1 },
-    { "Seamonkey",  "Msgcompose",  NULL,       0,           True,         -1 },
-    { "Emacs",            NULL,       NULL,       1 << 1,       False,        -1 },
-    { "Transmission",     NULL,       NULL,       1 << 3,       False,        -1 },
+    { "Emacs",            NULL,       NULL,       1 << 2,       False,       -1 },
+    { "Transmission",     NULL,       NULL,       1 << 3,       False,       -1 },
 };
 
 /* layout(s) */
